@@ -2,7 +2,7 @@
 
 ##Student names and SIDs - Andrew Kusuma (217624174) - Xurong Chen (216169221) - Mariam (216268516)
 
-##Github link - https://github.com/andkusuma/SIT313-ProjectII
+##Github link - https://github.com/sit313-project2/CARSALES
 
 ##Instructions to run the app -
 
