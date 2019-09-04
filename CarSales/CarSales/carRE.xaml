@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CarSales.carRE">
+        <StackLayout BackgroundColor="black">
+        <!-- Place new controls here -->
+      <Label HeightRequest="30"></Label>
+        <Label TextColor="white" Text="Create Your Car Sale" HorizontalTextAlignment="Center"
+               FontSize="20" HeightRequest="35" BackgroundColor="gray"/>
+        <Label HeightRequest="15"></Label>
+        <Label Text="Make:"  HeightRequest="35" TextColor="white" FontSize="20"/>
+
+        <Picker x:Name="picker1"
+        Title="Select a Make"
+        TitleColor="Red" HeightRequest="35">
+       <Picker.ItemsSource>
+      <x:Array Type="{x:Type x:String}">
+      <x:String>Audi</x:String>
+      <x:String>BMW</x:String>
+      <x:String>Ford</x:String>
+      <x:String>Holden</x:String>
+      <x:String>Honda</x:String>
+      <x:String>Jeep</x:String>
+      <x:String>Toyata</x:String>
+    </x:Array>
+  </Picker.ItemsSource>
+</Picker>
+        <Label HeightRequest="15"></Label>
+        <Label Text="Model:" TextColor="white" HeightRequest="35" FontSize="20"></Label>
+
+        <Picker x:Name="picker2"
+        Title="Select a Model"
+        TitleColor="Red" HeightRequest="35">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+
+                </x:Array>
+            </Picker.ItemsSource>
+</Picker>
+
+         <Label HeightRequest="15"></Label>
+        <Label Text="Year:" TextColor="white" HeightRequest="35" FontSize="20"></Label>
+
+        <Picker x:Name="picker4"
+        Title="Select a Year:"
+        TitleColor="Red" HeightRequest="35">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>2018</x:String>
+                   <x:String>2017</x:String>
+                   <x:String>2016</x:String>
+                  <x:String>2015</x:String>
+                 <x:String>2014</x:String>
+                 <x:String>2013</x:String>
+                <x:String>2012</x:String>
+                 </x:Array>
+            </Picker.ItemsSource>
+</Picker>
+
+        <Label HeightRequest="15"></Label>
+        <Label Text="Transmission:" TextColor="white" HeightRequest="35" FontSize="20"></Label>
+
+        <Picker x:Name="picker3"
+        Title="Select a Year:"
+        TitleColor="Red" HeightRequest="35">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Automatic</x:String>
+                   <x:String>Manual</x:String>
+                   
+                 </x:Array>
+            </Picker.ItemsSource>
+</Picker>
+
+
+        <Label HeightRequest="15"></Label>
+        <Label Text="Distance(KM):" TextColor="white" HeightRequest="35" FontSize="20"></Label>
+        
+       
+           <Entry Keyboard="Numeric" BackgroundColor="white" HeightRequest="35"></Entry>
+
+        <Label HeightRequest="15"></Label>
+        <Label Text="Photo:" TextColor="white" HeightRequest="35" FontSize="20"></Label>
+   
+   <Button BackgroundColor="white" Text="Uplaod" HeightRequest="35" FontSize="20"></Button>
+        <Label Text="---------------------------------------------------" TextColor="white"></Label>
+        <Button BackgroundColor="white" Text="      Register      " VerticalOptions="CenterAndExpand" HorizontalOptions="Center"  FontSize="20"></Button>
+        <Button BackgroundColor="white" Text="       Cancel       " VerticalOptions="CenterAndExpand" HorizontalOptions="Center" FontSize="20"></Button>
+
+    </StackLayout>
+</ContentPage>
+
