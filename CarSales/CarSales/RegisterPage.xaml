@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CarSales.RegisterPage">
+    <ContentPage.Content>
+            <StackLayout BackgroundColor="black">
+        
+        <Label HeightRequest="40"/>
+        <Label/>
+        <Label Text="Register" FontSize="40"  TextColor="white" TextDecorations="None" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Start"/>
+        <Label Text="First Name:" TextColor="white" FontSize="18"/>
+        <Entry Keyboard="Text" BackgroundColor="white" Placeholder="Enter your First Name"/>
+        <Label HeightRequest="20"/>
+        <Label Text="Last Name:" TextColor="white" FontSize="18"/>
+        <Entry Keyboard="Text" BackgroundColor="white" Placeholder="Enter your Last Name"/>
+        <Label HeightRequest="20"/>
+        <Label Text="Phone Number:" TextColor="white" FontSize="18"/>
+        <Entry Keyboard="Telephone" BackgroundColor="white" Placeholder="Enter your Phone Number"/>
+        <Label HeightRequest="20"/>
+        <Label Text="Email:" TextColor="white" FontSize="18"/>
+        <Entry Keyboard="Email" BackgroundColor="white" Placeholder="Enter your Email"/>
+        <Label HeightRequest="20"/>
+        <Label Text="Password:" TextColor="white" FontSize="18"/>
+        <Entry Keyboard="Text" BackgroundColor="white" Placeholder="Create your Password"/>
+        <Label HeightRequest="20"/>
+        <Label Text="Confirm Password:" TextColor="white" FontSize="18"/>
+        <Entry Keyboard="Text" BackgroundColor="white" Placeholder="Please Confirm Your Password"/>
+        <Label HeightRequest="20"/>
+        <Button Text="Register" FontSize="20" BackgroundColor="gray"/>
+        <Button Text="Cancel" FontSize="20" BackgroundColor="gray"/>
+
+            
+    </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
