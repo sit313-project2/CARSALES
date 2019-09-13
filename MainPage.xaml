@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="User.MainPage">
+     <StackLayout BackgroundColor="black">
+    <StackLayout >
+        
+        <!-- Place new controls here -->
+        <Label HeightRequest="40"></Label>
+        <Button Text="LOGOUT" HorizontalOptions="End" FontSize="18" TextColor="black" BackgroundColor="red" ></Button>
+        <Label Text="PROFLIE" TextColor="white" HorizontalTextAlignment="Center" FontSize="25"></Label>
+        <Image  Source="Test.png" BackgroundColor="white" HorizontalOptions="Center" AutomationId="userImage" Aspect="AspectFill" HeightRequest="140" WidthRequest="140" x:Name="Userimage"></Image>
+       
+        <Label></Label>
+        <Label Text="User Name" x:Name="UserName" FontSize="20" FontAttributes="Bold" AutomationId="LabelName" TextColor="white" HorizontalOptions="CenterAndExpand"></Label>
+        <Label Text="User Location" TextColor="white" x:Name="Ulocation" AutomationId="Userlocation" HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold"></Label>
+        <Label Text="-------------------------" HorizontalOptions="CenterAndExpand" TextColor="white"></Label>
+        <Label Text="Your List" TextColor="white" FontSize="20" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
+       
+       </StackLayout>
+         <StackLayout BackgroundColor="black" Orientation="Horizontal">
+               
+                <StackLayout Margin="20" HorizontalOptions="Start">
+                    <Image HeightRequest="100" WidthRequest="100" Source="" BackgroundColor="white" AutomationId="CarL1" x:Name="carL1"></Image>
+                </StackLayout>
+
+               
+                <StackLayout Margin="20" BackgroundColor="black" >
+                    <Label Text="Car Information" TextColor="white" FontAttributes="Bold" AutomationId="carInfo1" x:Name="Carinfo1"/>
+                    <Label Text="car Price" TextColor="white" FontAttributes="Bold" AutomationId="CarPri1" x:Name="Carpri1"/>
+                </StackLayout>
+            </StackLayout>
+
+         <StackLayout BackgroundColor="black" Orientation="Horizontal">
+               
+                <StackLayout Margin="20" HorizontalOptions="Start">
+                    <Image HeightRequest="100" WidthRequest="100" Source="" BackgroundColor="white" AutomationId="CarL2" x:Name="carL2"></Image>
+                </StackLayout>
+
+               
+                <StackLayout Margin="20" BackgroundColor="black" >
+                    <Label Text="Car Information" TextColor="white" FontAttributes="Bold" AutomationId="carInfo2" x:Name="Carinfo2"/>
+                    <Label Text="car Price" TextColor="white" FontAttributes="Bold" AutomationId="CarPri2" x:Name="Carpri2"/>
+                </StackLayout>
+            </StackLayout>
+    </StackLayout>
+    
+</ContentPage>
