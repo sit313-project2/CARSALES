@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            xmlns:views="clr-namespace:CarsalesAppAgain.Views"
+            x:Class="CarsalesAppAgain.Views.MainPage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"   
+            >
+
+    <TabbedPage.Children>
+        
+        
+        <!--<ContentPage Title="Home" Icon="home.png" BackgroundColor="White"  />-->
+        <!--<views:CarSalesListPage />-->
+
+        <!--<views:CarSalesListPage />-->
+
+        <!--<x:Arguments>
+                <views:CarSalesListPage />
+            </x:Arguments>-->
+
+        <NavigationPage Title="Home" IconImageSource="home.png">
+            <x:Arguments>
+                <views:CarSalesListPage />
+            </x:Arguments>
+        </NavigationPage>
+        
+
+        <!--<ContentPage Title="Add" Icon="home.png" BackgroundColor="White"/>-->
+        <!--<views:CarSalesListPage />
+        <x:Arguments>
+                <views:CarSalesListPage />
+            </x:Arguments>-->
+
+        <NavigationPage Title="Add" IconImageSource="add.png">
+            <x:Arguments>
+                <views:carRE />
+            </x:Arguments>
+        </NavigationPage>
+
+
+        <!--<ContentPage Title="Profile" Icon="profilenew.png" x:Name="home" BackgroundColor="White"/>-->
+        <!--<views:CarSalesListPage/>
+        <x:Arguments>
+                <views:CarSalesListPage />
+            </x:Arguments>-->
+
+        <NavigationPage Title="Profile" IconImageSource="profilenew.png">
+            <x:Arguments>
+                <views:AboutPage />
+            </x:Arguments>
+        </NavigationPage>
+                    
+        
+    </TabbedPage.Children>
+
+
+    
+    </TabbedPage>
+    

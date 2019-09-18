@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModel1="clr-namespace:CarsalesAppAgain.ViewModels"
+    xmlns:view="clr-namespace:CarsalesAppAgain.Views"
+    x:Class="CarsalesAppAgain.Views.CarSalesListPage"
+    BackgroundColor="black">
+
+    <ContentPage.BindingContext>
+        <viewModel1:CardDataViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout
+        Orientation="Vertical">
+        <Label
+            Text="Search"
+            VerticalOptions="Start"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            BackgroundColor="black"
+            FontFamily="Avenir Next"
+            Font="Bold,20"
+            TextColor="white"
+            HorizontalOptions="CenterAndExpand"
+            Margin="20"/>
+        <ListView
+            x:Name="listView"
+            SelectedItem="{Binding SelcetedItem,Mode=TwoWay}"
+            RowHeight="150"
+            ItemsSource="{Binding CardDataCollection}"
+            HasUnevenRows="True"  >
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <view:CardViewTemplate/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
